@@ -147,7 +147,20 @@ int main()
                     system("cls");
                     break;
                 }
-             
+                int nim;
+                cout << "Masukan NIM: ";
+                cin >> nim;
+                if (deleteNode(nim)) {
+                    cout << "nim: " << nim << " Berhasil dihapus" << endl;
+                    system("pause");
+                    system("cls");
+                }
+                else
+                    cout << " Data tidak ditemukan" << endl;
+                break;
+
+            
+
 
 
             }
