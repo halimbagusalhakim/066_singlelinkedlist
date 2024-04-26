@@ -81,6 +81,8 @@ bool deleteNode(int nim) {
     return true;
 }
 
+
+
 void traverse() {
     if (listEmpty()) {
         cout << "List Kosong" << endl;
@@ -168,17 +170,14 @@ int main()
                 break;
             default:
                 cout << "Pilihan tidak ada" << endl;
-                break;
-
-
-
-
-            
-
-
+                break;   
 
             }
         }
-    }
+        catch (exception e) {
+            cout << "Terjadi kesalahan " << endl;
+        }
+        
+    } while (pilihan != 5);
 }
 
