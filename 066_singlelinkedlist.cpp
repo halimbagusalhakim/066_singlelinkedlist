@@ -81,6 +81,23 @@ bool deleteNode(int nim) {
     return true;
 }
 
+void traverse() {
+    if (listEmpty()) {
+        cout << "List Kosong" << endl;
+        system("pause");
+        system("cls");
+        return;
+    }
+    else {
+        Node* currentNode = START;
+        while (currentNode != NULL) {
+            cout << "NIM: " << currentNode->noMhs << ", Nama: " << currentNode->name;
+                currentNode = currentNode->next;
+        }
+    }
+}
+
+
 
 int main()
 {
